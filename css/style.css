@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Clicker+Script|Elsie+Swash+Caps');
+/* This is comment */
+/* CSS Syntax
+selectors[{
+  property: value;
+  property: value;
+}
+*/
+
+/* Type selectors */
+
+p { /*select all p elements*/
+  font-size: 1em; /* px(will always be 12px),pt(different from each browser, avoid), %(reletive to the parent), em(1em = 16px) */
+  line-height: 1.5em;
+  }
+
+figcaption {
+  /*
+  font-weight: normal;
+  font-size: : 0.75em;
+  line-height: 1.5em;
+  font-family: Georgia, "New Times Roman", serif;
+  New Times Roman needs to be in "" due to the space in the name
+  */
+  font: normal 0.7em/1.5em font-family: 'Elsie Swash Caps', cursive;
+  /* same as above but short hand.*/
+  color: #777;
+  text-align: left;
+
+}
+
+
+/* Class selectors (applied to as many elemnts as you like) */
+
+.milk-text {/*will select elements with class="milktext"*/
+  font: bold 2.6em 'Clicker Script', cursive;
+  color: white;
+  text-shadow: 0 2px 3px #000;
+
+}
+
+/* Id selectors (apply to one unique element per page) */
+
+#logo { /* select elements with the ID logo*/
+  background-color: aqua;
+}
+
+/* Descendent Selector */
+
+#logo h1{/* selects the h1 inside of id logo*/
+  font-family: 'Clicker Script', cursive;
+}
+#logo h2 {
+  font-family: 'Elsie Swash Caps', cursive;
+}
+
+/* Psuedo Selector (select based on relation and/or event state)*/
+
+#details a:link, #details a:visited{
+  color:black;
+  text-decoration: none;
+
+}
+
+#details a:hover {
+  color: black;
+  text-decoration: underline;
+}
+#details a:active{
+  color: red;
+}
